@@ -1,0 +1,3 @@
+# Auto Configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.rocketmq.spring.autoconfigure.RocketMqAutoconfiguration
