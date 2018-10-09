@@ -69,7 +69,6 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/mengshijian/rocketmq-spring-boot.git</developerConnection>
-	  <tag>rocketmq-spring-boot-1.0.0</tag>
   </scm>
 
 	<build>
