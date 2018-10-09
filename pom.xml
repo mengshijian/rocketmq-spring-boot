@@ -5,7 +5,7 @@
 	<groupId>rocketmq.spring.boot</groupId>
 	<artifactId>rocketmq-spring-boot</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<name>rocketmq-spring-boot</name>
 	<!-- FIXME change it to the project's website -->
@@ -69,7 +69,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/mengshijian/rocketmq-spring-boot.git</developerConnection>
-    <tag>rocketmq-spring-boot-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
 	<build>
