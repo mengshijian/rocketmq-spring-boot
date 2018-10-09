@@ -12,6 +12,7 @@ import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.rocketmq.spring.autoconfigure.common.AbstractRocketMqConsumer;
+import org.rocketmq.spring.autoconfigure.common.AbstractRocketMqConsumer.DefaultMessageListenerConcurrently;
 import org.rocketmq.spring.autoconfigure.common.DefaultRocketMqProducer;
 import org.rocketmq.spring.autoconfigure.common.RocketMqConsumerMBean;
 import org.slf4j.Logger;
