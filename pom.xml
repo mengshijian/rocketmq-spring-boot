@@ -19,7 +19,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<spring.boot>2.0.2.RELEASE</spring.boot>
 		<rocketmq.client>4.2.0</rocketmq.client>
-		<version.suffix>-SNAPSHOT</version.suffix>
+		<!--<version.suffix>-SNAPSHOT</version.suffix>-->
 	</properties>
 
 	<modules>
@@ -60,14 +60,18 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-	<profiles>
+	<!--<profiles>
 		<profile>
 			<id>release</id>
 			<properties>
 				<version.suffix></version.suffix>
 			</properties>
 		</profile>
-	</profiles>
+	</profiles>-->
+
+	<scm>
+		<developerConnection>scm:git:https://github.com/mengshijian/rocketmq-spring-boot.git</developerConnection>
+	</scm>
 
 	<build>
 		<pluginManagement>
@@ -91,6 +95,7 @@
 					</configuration>
 				</plugin>
 
+				<!-- 打包相关 -->
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
@@ -100,6 +105,27 @@
 						<layout>JAR</layout>
 					</configuration>
 				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-scm-plugin</artifactId>
+					<version>1.10.0</version>
+					<configuration>
+						<connectionType>developerConnection</connectionType>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5.3</version>
+					<configuration>
+						<username>meshji66@163.com</username>
+						<password>shijian@4810</password>
+						<tagBase>scm:git:https://github.com/mengshijian/rocketmq-spring-boot</tagBase>
+						<releaseProfiles>release</releaseProfiles>
+					</configuration>
+				</plugin>
+
 			</plugins>
 		</pluginManagement>
 	</build>
