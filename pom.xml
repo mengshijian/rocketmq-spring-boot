@@ -121,8 +121,7 @@
 						<username>meshji66@163.com</username>
 						<password>shijian@4810</password>
 						<tagBase>scm:git:https://github.com/mengshijian/rocketmq-spring-boot</tagBase>
-						<releaseProfiles>release</releaseProfiles>
-
+						<autoVersionSubmodules>true</autoVersionSubmodules>
 					</configuration>
 				</plugin>
 
