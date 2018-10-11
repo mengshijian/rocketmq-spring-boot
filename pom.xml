@@ -18,6 +18,7 @@
 		<spring.boot>2.0.2.RELEASE</spring.boot>
 		<rocketmq.client>4.2.0</rocketmq.client>
 		<!--<version.suffix>-SNAPSHOT</version.suffix>-->
+		<config.version>1.2.2-SNAPSHOT</config.version>
 	</properties>
 
 	<modules>
